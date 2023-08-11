@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "bbclient",
+  "version": "${version}",
+  "name": "BBClient",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/ben/BBClient"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/bbclient/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.bernhardbmx.bbclient.client.BBClientClient"
+    ],
+    "main": [
+      "net.bernhardbmx.bbclient.BBClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
